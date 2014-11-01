@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GestionAlumnos</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_gestor">GestorActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nombrealumno">Nombre Alumno</string>
+
+</resources>

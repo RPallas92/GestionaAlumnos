@@ -1,0 +1,374 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/calificacionesTitutlo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="Asignatura - Nombre Alumno"
+            android:textSize="38sp" 
+            android:layout_marginTop="10dp"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/linearlayout_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="40dp"
+                        android:gravity="right"
+                        android:minWidth="250dp"
+                        android:text="Pregunta dudas:"
+                        android:textSize="24dp" />
+
+                    <es.rpallas.widget.CustomNumberPicker
+                        style="#16973829"
+                        android:id="@+id/actitudPreguntaDudas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        max="4"
+                        min="1"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="40dp"
+                        android:gravity="right"
+                        android:minWidth="250dp"
+                        android:text="Atiende:"
+                        android:textSize="24dp" />
+
+                    <es.rpallas.widget.CustomNumberPicker
+                        android:id="@+id/actitudAtiende"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        max="4"
+                        min="1"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="40dp"
+                        android:gravity="right"
+                        android:minWidth="250dp"
+                        android:text="Se esfuerza:"
+                        android:textSize="24dp" />
+
+                    <es.rpallas.widget.CustomNumberPicker
+                        android:id="@+id/actitudSeEsfuerza"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        max="4"
+                        min="1"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="40dp"
+                        android:gravity="right"
+                        android:minWidth="250dp"
+                        android:text="Presentación:"
+                        android:textSize="24dp" />
+
+                    <es.rpallas.widget.CustomNumberPicker
+                        android:id="@+id/actitudPresentacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        max="4"
+                        min="1"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="24dp"
+                android:background="#ffffffff"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="Actitud"
+                android:textSize="30sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/linearlayout_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="40dp"
+                        android:gravity="right"
+                        android:minWidth="250dp"
+                        android:text="Acaba en casa:"
+                        android:textSize="24dp" />
+
+                    <es.rpallas.widget.CustomNumberPicker
+                        android:id="@+id/deberesAcabaEnCasa"
+                        style="#16973829"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        max="4"
+                        min="1"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="40dp"
+                        android:gravity="right"
+                        android:minWidth="250dp"
+                        android:text="Presentación:"
+                        android:textSize="24dp" />
+
+                    <es.rpallas.widget.CustomNumberPicker
+                        android:id="@+id/deberesPresentacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        max="4"
+                        min="1"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="24dp"
+                android:background="#ffffffff"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="Deberes"
+                android:textSize="30sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/linearlayout_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="40dp"
+                        android:gravity="right"
+                        android:minWidth="250dp"
+                        android:text="Autonomía:"
+                        android:textSize="24dp" />
+
+                    <es.rpallas.widget.CustomNumberPicker
+                        android:id="@+id/autonomiaAutonomia"
+                        style="#16973829"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        max="4"
+                        min="1"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="40dp"
+                        android:gravity="right"
+                        android:minWidth="250dp"
+                        android:text="Acaba en clase:"
+                        android:textSize="24dp" />
+
+                    <es.rpallas.widget.CustomNumberPicker
+                        android:id="@+id/autonomiaAcabaEnClase"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        max="4"
+                        min="1"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="24dp"
+                android:background="#ffffffff"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="Autonomía"
+                android:textSize="30sp" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:padding="20dp" >
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/calificacionesCancelarBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:minWidth="160dp"
+                android:padding="5dp"
+                android:text="Cancelar"
+                fbutton:buttonColor="@color/fbutton_color_alizarin"
+                fbutton:cornerRadius="5dp"
+                fbutton:shadowColor="@color/fbutton_color_pomegranate"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/calificacionesAceptarBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/calificacionesCancelarBtn"
+                android:minWidth="160dp"
+                android:padding="5dp"
+                android:text="Aceptar"
+                fbutton:buttonColor="@color/fbutton_color_emerald"
+                fbutton:cornerRadius="5dp"
+                fbutton:shadowColor="@color/fbutton_color_nephritis"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
